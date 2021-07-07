@@ -1,0 +1,78 @@
+*{box-sizing: border-box;}
+
+
+body
+{
+    font-family: "Segoe UI";
+    height: 100%;
+    margin: 0;
+}
+
+.titel
+{
+    text-align: center;
+    font-size: 2em;
+    color: darkblue;
+}
+
+#bilder
+{
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+#bilder>img
+{
+    width: 30%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 5px 1px 19px -4px #000000;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#bilder>img:hover
+{
+    transform: scale(110%);
+}
+
+#lightbox
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+#lightbox>img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+#lightbox i
+{
+  
+    font-size: 5em;
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    color: white;
+    cursor: pointer;;
+}
+.imgContainer
+{
+
+    height: 100%;
+    position: relative;
+}
+
