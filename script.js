@@ -1,7 +1,9 @@
 const bilder=document.querySelectorAll("#bilder>img");
 
 
+console.log(bilder)
 
-console.log(bilder.forEach)
+
+
 
    
